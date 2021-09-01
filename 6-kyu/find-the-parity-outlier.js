@@ -11,7 +11,13 @@
 // [160, 3, 1719, 19, 11, 13, -21]
 // Should return: 160 (the only even number)
 function findOutlier(arr){
-    let newAr = arr.filter((v) => v % 2 !== 0)
-    return newAr[0];
+    var odd = arr.filter((a) => a%2==0)
+    var even = arr.filter((a) => a%2!==0)
+    return odd.length == 1 ? odd[0] : even[0]
 }
+
 findOutlier([0, 1, 2])
+findOutlier([1, 2, 3])
+findOutlier([2,6,8,10,3])
+findOutlier([0,0,3,0,0])
+findOutlier([1,1,0,1,1])

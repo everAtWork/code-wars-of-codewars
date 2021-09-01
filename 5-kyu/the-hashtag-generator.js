@@ -21,7 +21,8 @@
     let locArr = str.split(' ').map((val) => val.slice(0, 1).toUpperCase() + (val.slice(1))).join('')
   if (locArr.length > 139 || locArr == '') {
     return false
-  }  return `#${locArr}`
+  }  
+  return `#${locArr}`
 }
 console.log(generateHashtag(str));
 
