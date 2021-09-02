@@ -1,19 +1,7 @@
-let longOne = "A string that identifies character or characters to use in separating the string"
-function findShort(s){
-  let zet = s.split(" ");
-  for (const key in zet) {
-      if (zet.hasOwnProperty(key)) {
-          const elem = zet[key];
-          
-      }
-  }
-  return zet;
-}
-findShort(longOne);
-console.log(findShort(longOne));
+// Simple, given a string of words, return the length of the shortest word(s).
 
-uR = 'A stringue champ';
+// String will never be empty and you do not need to account for different data types.
+
 function findShort(s){
     return s.split(" ").sort((a,b) => a.length - b.length)[0].length
 }
-console.log(yayo(uR));
