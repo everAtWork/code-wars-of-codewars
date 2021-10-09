@@ -1,9 +1,9 @@
 function palindrome(str) {
     let spleet = str.split("");
     if (spleet[spleet.length - 1] === '.') {
-        return spleet.pop()
+        spleet.pop()
     }
-    let filterd = spleet.filter((val) => /[a-zA-Z]/.test(val))
+    let filterd = spleet.filter((val) => /[0-9a-zA-Z]/.test(val))
     let joint = filterd.join("").toLowerCase();
     let reversd = joint.split("").reverse().join("");
       if (joint === reversd) {
@@ -12,7 +12,9 @@ function palindrome(str) {
         return false
     }
     }
-    // нужно дописать еще одну проверку для случая с 1 eye
 palindrome("eye");
+palindrome("_eye");
 palindrome("1 eye for of 1 eye.");
+palindrome("1 eye for of eye 1.");
+    
     
