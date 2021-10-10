@@ -11,11 +11,11 @@
 
 
 const alphabetPosition = (text) => {
-    let spleetT = text.split('')
-    let filteredArOfT = spleetT.filter((val) => /[a-zA-Z]/.test(val))
-    let mapdArOfT = filteredArOfT.map((val) => val.toLowerCase().charCodeAt(0)-96)
-    let jointOPC = mapdArOfT.join(' ');
-    return jointOPC;
-    }
+    let _oneliner = text.split('')
+    .filter((val) => /[a-zA-Z]/.test(val))
+    .map((val) => val.toLowerCase().charCodeAt(0) - 96)
+    .join(' ')
+    return _oneliner;
+    }    
 
-    alphabetPosition("sunset sets")
+alphabetPosition("sunset sets")
