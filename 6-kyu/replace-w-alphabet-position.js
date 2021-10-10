@@ -17,3 +17,5 @@ const alphabetPosition = (text) => {
     let jointOPC = mapdArOfT.join(' ');
     return jointOPC;
     }
+
+    alphabetPosition("sunset sets")
